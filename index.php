@@ -41,7 +41,17 @@ if( isset($_SESSION['client_id']) ){
 		<br />Welcome <?= $user['client_email']; ?> 
 		<br /><br />You are successfully logged in!
 		<br /><br />
+
+
+	<?php include 'clientDetails.php'; ?>
+
+
+<br>
+<br>
+<br>
+
 		<a href="logout.php">Logout?</a>
+
 
 	<?php else: ?>
 
