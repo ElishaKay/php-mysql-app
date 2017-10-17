@@ -3,6 +3,8 @@
 session_start();
 
 require 'database.php';
+ 
+include 'header.php';
 
 if( isset($_SESSION['client_id']) ){
 

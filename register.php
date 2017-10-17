@@ -1,9 +1,11 @@
 <?php
 
+include 'header.php';
+
 session_start();
 
 if( isset($_SESSION['client_id']) ){
-	header("Location: /");
+	header("Location: /$url ?>");
 }
 
 require 'database.php';

@@ -1,5 +1,7 @@
 <?php
 
+include 'header.php';
+
 session_start();
 
 if( isset($_SESSION['client_id']) ){
@@ -22,7 +24,7 @@ if(!empty($_POST['client_email']) && !empty($_POST['client_password'])):
 	if(count($results) > 0 && password_verify($_POST['client_password'], $results['client_password']) ){
 
     	$_SESSION['client_id'] = $results['client_id'];
-		header("Location: /");
+		header("Location: /$url");
 	}
 	
     else if(count($results) > 0 && $_POST['client_password'] == $results['client_password'])  {
@@ -30,7 +32,7 @@ if(!empty($_POST['client_email']) && !empty($_POST['client_password'])):
     
     //take client to his custom page and set his client id in the session variable
     	$_SESSION['client_id'] = $results['client_id'];
-		header("Location: /");
+		header("Location: /$url");
     
 	} else {
 		$message = 'Sorry, those credentials do not match';
