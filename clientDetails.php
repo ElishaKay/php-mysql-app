@@ -16,8 +16,3 @@ var_dump($results);
 
 ?>
 
-
-
-
-
-
