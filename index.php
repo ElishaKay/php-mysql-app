@@ -33,7 +33,7 @@ if( isset($_SESSION['client_id']) ){
 <body>
 
 	<div class="header">
-		<a href="/">Your App Name</a>
+		<a href="dropdown/index.php">Go to the awesome dropdown</a>
 	</div>
 
 	<?php if( !empty($user) ): ?>
