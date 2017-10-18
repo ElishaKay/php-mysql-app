@@ -1,7 +1,7 @@
 <?php
 $server = 'localhost';
 $username = 'root';
-$password = '*';
+$password = 'pokemon7';
 $database = 'moviehol_PHP-Login';
 
 try{

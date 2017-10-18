@@ -24,12 +24,12 @@ include_once("db_connect.php");
         
         <select id="employee">
         
-        <option value="" selected="selected">Select Employee Name</option>
+        <option value="" selected="selected">Select Client Name</option>
 	
 
 		<?php
 		
-		$sql = "SELECT id, employee_name, employee_salary, employee_age FROM employee LIMIT 10";
+		$sql = "SELECT * FROM client order by client_creation_date desc LIMIT 10";
 		
 		$resultset = mysqli_query($conn, $sql) or die("database error:". mysqli_error($conn));
 		
@@ -38,7 +38,7 @@ include_once("db_connect.php");
 		
 		?>
 	
-		<option value="<?php echo $rows["id"]; ?>"><?php echo $rows["employee_name"]; ?></option>
+		<option value="<?php echo $rows["client_id"]; ?>"><?php echo $rows["client_name"]; ?></option>
 		
 		<?php }	?>
 	

@@ -44,11 +44,11 @@ echo "<p>This is a Header.PHP File</p>";
 <body> 
 <div id="navbar"> 
   <ul> 
-	<li><a href="http://github.com">Link 1</a></li> 
-	<li><a href="http://github.com">Link 2</a></li> 
-	<li><a href="http://github.com">Link 3</a></li> 
-	<li><a href="http://github.com">Link 4</a></li> 
-	<li><a href="http://github.com">Link 5</a></li> 
+	<li><a href="$url">Link 1</a></li> 
+	<li><a href="/">Link 2</a></li> 
+	<li><a href="/">Link 3</a></li> 
+	<li><a href="/">Link 4</a></li> 
+	<li><a href="/">Link 5</a></li> 
   </ul> 
 </div> 
 </body> 
