@@ -2,7 +2,7 @@
 
 $url ='php-mysql-app';
 	
-echo "<p>This is a pizza</p>";
+echo "<p>This is a Header.PHP File</p>";
 
 ?>
 

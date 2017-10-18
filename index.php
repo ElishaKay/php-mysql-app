@@ -33,7 +33,7 @@ if( isset($_SESSION['client_id']) ){
 <body>
 
 	<div class="header">
-		<a href="dropdown/index.php">Go to the awesome dropdown</a>
+
 	</div>
 
 	<?php if( !empty($user) ): ?>
@@ -51,6 +51,8 @@ if( isset($_SESSION['client_id']) ){
 <br>
 
 		<a href="logout.php">Logout?</a>
+		<a href="dropdown/">Go to the awesome dropdown</a>
+		<a href="drag-and-drop/">Check out the Drag and Drop</a>
 
 
 	<?php else: ?>

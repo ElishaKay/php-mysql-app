@@ -1,0 +1,3 @@
+query to add the 'item_order' column to client table.
+
+ALTER TABLE client ADD item_order int(11) NOT NULL; 

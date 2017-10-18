@@ -54,7 +54,7 @@ include_once("db_connect.php");
 
 			<div class="row" id="heading" style="display:none;"><h3><div class="col-sm-4"><strong>Employee Name</strong></div>
 
-				<div class="col-sm-4"><strong>Age</strong></div><div class="col-sm-4"><strong>Salary</strong></div></h3></div><br>
+			<div class="col-sm-4"><strong>Age</strong></div><div class="col-sm-4"><strong>Salary</strong></div></h3></div><br>
 
 
 			<div class="row" id="records"><div class="col-sm-4" id="emp_name"></div><div class="col-sm-4" id="emp_age"></div>
@@ -68,6 +68,7 @@ include_once("db_connect.php");
 	<div style="margin:50px 0px 0px 0px;">
 		<a class="btn btn-default read-more" style="background:#3399ff;color:white" href="http://www.phpzag.com/ajax-drop-down-selection-data-load-with-php-mysql" title="">Back to Tutorial</a>			
 	</div>		
+
 </div>
 
 <?php include('footer.php');?>
