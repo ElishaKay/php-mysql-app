@@ -2,20 +2,22 @@ $(document).ready(function(){
 	// code to get all records from table via select box
 	$("#employee").change(function() {    
 		var id = $(this).find(":selected").val();
-		var dataString = 'client_id='+ id;    
+		var dataString = 'empid='+ id;    
 		$.ajax({
 			url: 'getEmployee.php',
-			dataType: "json",
+			type: 'post',
+			dataType: "text",
 			data: dataString,  
 			cache: false,
-			success: function(employeeData) {
-			   if(employeeData) {
+			error: function(req, err){ console.log('my message' + err); }
+			success: function(data) {
+			   if(data) {
 					$("#heading").show();		  
 					$("#no_records").hide();					
-					$("#emp_name").text(employeeData.client_name);
-					$("#emp_age").text(employeeData.client_email);
-					$("#emp_salary").text(employeeData.item_order);
-					$("#records").show();		 
+					$("#emp_name").text(data.client_name);
+					$("#emp_age").text(data.client_email);
+					$("#emp_salary").text(data.item_order);
+					$("#records").show();
 				} else {
 					$("#heading").hide();
 					$("#records").hide();

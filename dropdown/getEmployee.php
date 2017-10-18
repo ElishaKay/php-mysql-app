@@ -1,22 +1,29 @@
 <?php
 
+
+// require '../database.php';
+
 include_once("db_connect.php");
 
-if($_REQUEST['empid']) {
+// $client_id = ;
 
-	$sql = "SELECT id, employee_name, employee_salary, employee_age FROM employee WHERE id='".$_REQUEST['empid']."'";
+
+if( !isset($_REQUEST['empid']) ){
+	echo '{}';
+	return;
+}
+
+	$sql = "SELECT client_name, client_email from client WHERE client_id = '".$_REQUEST['empid']."'";
 
 	$resultset = mysqli_query($conn, $sql) or die("database error:". mysqli_error($conn));
 	
 	$data = array();
-
+	
 	while( $rows = mysqli_fetch_assoc($resultset) ) {
 		$data = $rows;
 	}
-
-	echo json_encode($data);
-		} else {
-	echo 0;	
 	
-}
-?>
+	echo json_encode($data);
+	return;
+
+	?>
