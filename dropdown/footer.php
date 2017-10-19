@@ -2,5 +2,7 @@
 
 </div>
 </div>
-</body></html>
+</body>
+<script type="text/javascript" src="script/getData.js"></script>
+</html>
 

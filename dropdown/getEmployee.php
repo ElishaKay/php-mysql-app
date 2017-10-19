@@ -13,7 +13,7 @@ if( !isset($_REQUEST['empid']) ){
 	return;
 }
 
-	$sql = "SELECT client_name, client_email from client WHERE client_id = '".$_REQUEST['empid']."'";
+	$sql = "SELECT client_name, client_email, item_order from client WHERE client_id = '".$_REQUEST['empid']."'";
 
 	$resultset = mysqli_query($conn, $sql) or die("database error:". mysqli_error($conn));
 	

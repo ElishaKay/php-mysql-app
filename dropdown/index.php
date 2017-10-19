@@ -6,7 +6,7 @@ include_once("db_connect.php");
 ?>
 
 <title>phpzag.com : Demo Ajax Registration Script with PHP, MySQL and jQuery</title>
-<script type="text/javascript" src="script/getData.js"></script>
+
 
 <?php include('container.php');?>
 

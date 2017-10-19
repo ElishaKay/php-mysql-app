@@ -10,3 +10,21 @@ query to add the 'item_order' column to client table.
 ALTER TABLE client ADD item_order int(11) NOT NULL; 
 
 The app uses MySQL, PHP, and Ajax.
+
+<h3>A note about the dropdwon features:</h3>
+
+The Dropdown action triggers the Ajax script in 'dropdown/script/getData.js'
+
+Currently, it's fetching stuff from getemployee.php.
+
+This response be found in Chrome's 'Network' Tab. The subsection is called "Response".
+
+This data is then displayed unto the page via the Ajax Function in 'dropdown/script/getData.js'
+
+<h3>Chrome's Network tab for handling request/response processes</h3>
+
+<img src="network-tab.png">
+
+<h3>Demo</h3>
+
+<img src="dropdown.png">

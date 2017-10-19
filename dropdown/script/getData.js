@@ -6,15 +6,18 @@ $(document).ready(function(){
 		$.ajax({
 			url: 'getEmployee.php',
 			type: 'post',
-			dataType: "text",
+			dataType: "json",
 			data: dataString,  
 			cache: false,
-			error: function(req, err){ console.log('my message' + err); }
+			error: function(req, err){ console.log('my message' + err); },
 			success: function(data) {
 			   if(data) {
-					$("#heading").show();		  
+			   	console.log('data', data);
+			   	// console.log('data name', data.client_name);
+			   		$("#heading").show();		  
 					$("#no_records").hide();					
 					$("#emp_name").text(data.client_name);
+					// debugger;
 					$("#emp_age").text(data.client_email);
 					$("#emp_salary").text(data.item_order);
 					$("#records").show();
