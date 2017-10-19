@@ -1,3 +1,4 @@
+<!-- Does this get ignored -->
 <!-- //sample comment -->
 
 <?php
