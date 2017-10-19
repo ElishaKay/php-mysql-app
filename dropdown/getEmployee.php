@@ -22,7 +22,8 @@ if( !isset($_REQUEST['empid']) ){
 		
 		?>
 	
-		<option value="<?php echo $rows["client_id"]; ?>"><?php echo $rows["client_name"]; ?></option>
+		<p><?php echo $rows["client_name"]; ?></p>
+		<br>	
 		
 		<?php }	
 	
