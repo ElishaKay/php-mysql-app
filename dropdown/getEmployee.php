@@ -13,15 +13,23 @@ if( !isset($_REQUEST['empid']) ){
 	return;
 }
 
-	$sql = "SELECT client_name, client_email, item_order from client WHERE client_id = '".$_REQUEST['empid']."'";
+	$sql = "SELECT client_name, client_email, item_order from client";
 
 	$resultset = mysqli_query($conn, $sql) or die("database error:". mysqli_error($conn));
 	
-	$data = array();
+	// $data = array();
+	while( $rows = mysqli_fetch_assoc($resultset) ) { 
+		
+		?>
 	
-	while( $rows = mysqli_fetch_assoc($resultset) ) {
-		$data = $rows;
-	}
+		<option value="<?php echo $rows["client_id"]; ?>"><?php echo $rows["client_name"]; ?></option>
+		
+		<?php }	
+	
+
+	// while( $rows = mysqli_fetch_assoc($resultset) ) {
+	// 	$data = $rows;
+	// }
 	
 	echo json_encode($data);
 	return;
