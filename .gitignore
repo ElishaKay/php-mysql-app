@@ -1,3 +1,5 @@
+.env
+
 database*
 drag-and-drop/config*
 dropdown/db_connect*
