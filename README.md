@@ -11,7 +11,7 @@ ALTER TABLE client ADD item_order int(11) NOT NULL;
 
 The app uses MySQL, PHP, and Ajax.
 
-<h3>A note about the dropdwon features:</h3>
+<h3>A note about the dropdown features:</h3>
 
 The Dropdown action triggers the Ajax script in 'dropdown/script/getData.js'
 
