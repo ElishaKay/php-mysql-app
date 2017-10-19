@@ -1,3 +1,5 @@
+<!-- //sample comment -->
+
 <?php
 
 // PDO connect *********
